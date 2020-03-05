@@ -19,12 +19,13 @@ val reactVersion = "16.13.0"
 dependencies {
     implementation(kotlin("stdlib-js"))
 
+    implementation("org.jetbrains:kotlin-react:${reactVersion}-${kotlinWrappersVersion}")
     implementation("org.jetbrains:kotlin-react-dom:${reactVersion}-${kotlinWrappersVersion}")
 
     implementation(npm("react", reactVersion))
     implementation(npm("react-dom", reactVersion))
 
-    implementation(npm("@svgr/webpack", "5.2.0"))
+    implementation(npm("@svgr/webpack"))
 }
 
 kotlin {
