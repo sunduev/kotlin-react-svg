@@ -8,8 +8,6 @@ fun main() {
             +"Kotlin React SVG"
         }
 
-        // just calling it for example
-        // might not work like this if build goes successful..
-        child(svgRainDay.default)
+        child(svgRainDay.default())
     }
 }
